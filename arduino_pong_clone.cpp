@@ -10,7 +10,6 @@
 #include <chrono>
 #include <cstdlib>
 #include <sstream>
-#include "SerialPort.h"
 #include "Ball.h"
 #include "Paddle.h"
 #include "PlayerScore.h"
@@ -174,11 +173,6 @@ int SDL_main(int argc, char* argv[])
     TTF_Font* scoreFont = TTF_OpenFont("DejaVuSansMono.ttf", 40);
     SDL_Color scoreColor = { 0xFF, 0xFF, 0xFF, 0xFF };
 
-    // Initialize the serial port for Arduino communication
-    const char* serialPortName = "COM10";  // Adjust the COM port as needed
-    const int baudRate = 9600;
-    SerialPort arduino(serialPortName, baudRate);
-
     // Create the player score text fields
     PlayerScore playerOneScoreText(Vec2(WINDOW_WIDTH / 4, 20), renderer, scoreFont, scoreColor);
     PlayerScore playerTwoScoreText(Vec2(3 * WINDOW_WIDTH / 4, 20), renderer, scoreFont, scoreColor);
@@ -214,8 +208,6 @@ int SDL_main(int argc, char* argv[])
         {
             auto startTime = std::chrono::high_resolution_clock::now();
 
-            std::string arduinoData = arduino.Readline();
-            std::stringstream ss(arduinoData);
 
             SDL_Event event;
             while (SDL_PollEvent(&event)) 
@@ -366,7 +358,7 @@ int SDL_main(int argc, char* argv[])
             if (gameOver)
             {
                 SDL_Color winnerColor = { 0xFF, 0xFF, 0xFF, 0xFF };
-                TTF_Font* winnerFont = TTF_OpenFont("DejaVuSansMono.ttf", 60);
+                TTF_Font* winnerFont = TTF_OpenFont("DejaVuSansMono-Bold.ttf", 60);
 
                 SDL_Surface* winnerSurface = nullptr;
                 SDL_Texture* winnerTexture = nullptr;
