@@ -171,7 +171,7 @@ int SDL_main(int argc, char* argv[])
     TTF_Init();
 
     // Initialize the font and color
-    TTF_Font* scoreFont = TTF_OpenFont("DejaVuSansMono.ttf", 40);
+    TTF_Font* scoreFont = TTF_OpenFont("DejaVuSansMono-Bold.ttf", 40);
     SDL_Color scoreColor = { 0xFF, 0xFF, 0xFF, 0xFF };
 
     // Initialize the serial port for Arduino communication
