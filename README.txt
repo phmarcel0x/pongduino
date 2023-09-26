@@ -5,12 +5,12 @@ Requirements
 Graphics
 	A paddle for Player One		-> rendered as a white rectangle
 	A paddle for Player Two		-> rendered as a white rectangle
-	A ball						-> rendered as a white square
-	A net						-> rendered as a dashed line
+	A ball				-> rendered as a white square
+	A net				-> rendered as a dashed line
 	A score for each player		-> rendered as a white number above each player’s zone
 
 Control
-	WASD control Player One’s paddle		: LEFT side of the window
+	WASD control Player One’s paddle	: LEFT side of the window
 	Arrow keys control Player Two’s paddle	: RIGHT side of the window
 	The paddles should not move beyond the bounds of the window
 
@@ -29,7 +29,7 @@ Interactions
 		If the ball hits the BOTTOM		from the RIGHT,		it should reflect UPWARD and LEFT
 
 		The ball should reflect off of a player’s paddle
-		If the ball hits a paddle in the TOP third,			it should reflect UPWARD
+		If the ball hits a paddle in the TOP third,		it should reflect UPWARD
 		If the ball hits a paddle in the MIDDLE third,		it should reflect back horizontally
 		If the ball hits a paddle in the botom third,		its should reflect DOWNWARD
 
