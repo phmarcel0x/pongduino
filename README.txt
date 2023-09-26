@@ -1,20 +1,20 @@
-C++ PONG CLONE Tutorial:
-https://austinmorlan.com/posts/pong_clone/
+## C++ PONG CLONE Tutorial:
+### https://austinmorlan.com/posts/pong_clone/
 
-Requirements
-Graphics
+#### Requirements
+#### Graphics
 	A paddle for Player One		-> rendered as a white rectangle
 	A paddle for Player Two		-> rendered as a white rectangle
 	A ball				-> rendered as a white square
 	A net				-> rendered as a dashed line
 	A score for each player		-> rendered as a white number above each player’s zone
 
-Control
+#### Control
 	WASD control Player One’s paddle	: LEFT side of the window
 	Arrow keys control Player Two’s paddle	: RIGHT side of the window
 	The paddles should not move beyond the bounds of the window
 
-Interactions
+#### Interactions
 	To detect a collision between the ball and the paddles, we’ll make use of the Separating Axis Theorem (SAT)**. 
 	The SAT says (in simplified terms) that if you can show that the projections of two objects onto an axis have a gap, then the objects are not colliding.
 	**It gets pretty complicated if your 2D objects are rotated or you’re working in 3D, but for PONG, it’s simpler.
@@ -35,11 +35,14 @@ Interactions
 
 	The ball should pass through the LEFT and the RIGHT sides of the window
 
-Scoring
+#### Scoring
 	If the ball passes through the LEFT side of the window (past Player One),	=> point for Player Two
 	If the ball passes through the RIGHT side of the window (past Player Two),	=> point for Player One
 	After a score occurs, the ball should start in the center and shoot off in the direction of the LOSING player
 
-¿Audio?
+#### ¿Audio? (TBD)
 	If the ball hits a paddle, a sound effect should play.
 	If the ball hits a wall, a sound effect should play.
+
+#### ¿Arduino Joystick? (TBD)
+	Normal joystick functionality. 
