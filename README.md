@@ -1,7 +1,7 @@
 ## C++ PONG CLONE Tutorial:
 ### https://austinmorlan.com/posts/pong_clone/
 
-#### Requirements
+#### Requirements:
 #### Graphics
 	A paddle for Player One		-> rendered as a white rectangle
 	A paddle for Player Two		-> rendered as a white rectangle
