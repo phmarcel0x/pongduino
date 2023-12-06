@@ -39,9 +39,5 @@
 	If the ball passes through the RIGHT side of the window (past Player Two),	=> point for Player One
 	After a score occurs, the ball should start in the center and shoot off in the direction of the LOSING player
 
-#### ¿Audio? (TBD)
-	If the ball hits a paddle, a sound effect should play.
-	If the ball hits a wall, a sound effect should play.
-
 #### ¿Arduino Joystick? (TBD)
 	Normal joystick functionality. 
