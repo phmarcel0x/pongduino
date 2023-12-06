@@ -1,7 +1,7 @@
-## C++ PONG CLONE - Clone with Few Tweaks:
-### Credits: https://austinmorlan.com/posts/pong_clone/
-#### Requirements:
-#### Graphics
+### C++ PONG CLONE - Clone with a Few Tweaks:
+#### Credits: https://austinmorlan.com/posts/pong_clone/
+##### Requirements:
+##### Graphics
 	A paddle for Player One		-> rendered as a white rectangle
 	A paddle for Player Two		-> rendered as a white rectangle
 	A ball				-> rendered as a white square
