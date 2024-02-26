@@ -1,6 +1,9 @@
 ## C++ PONG CLONE - Clone with a Few Tweaks
 **Credits:** [Austin Morlan's Pong Clone](https://austinmorlan.com/posts/pong_clone/)
 
+![GitHub last commit](https://img.shields.io/github/last-commit/phmarcel0x/pongduino)
+![GitHub issues](https://img.shields.io/github/issues/phmarcel0x/pongduino)
+
 ### Requirements
 
 #### Graphics
